@@ -1,0 +1,812 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+
+  <title>Paras Caterers</title>
+  <meta content="" name="description">
+  <meta content="" name="keywords">
+
+  <!-- Favicons -->
+  {% load static %}
+  <link href=" {% static 'img/favicon.ico' %}" rel="icon">
+  <link href="{% static 'img/apple-touch-icon.png' %}" rel="apple-touch-icon">
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500;1,600;1,700|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i" rel="stylesheet">
+
+  <!-- Vendor CSS Files -->
+  <link href="{% static 'vendor/animate.css/animate.min.css' %}" rel="stylesheet">
+  <link href="{% static 'vendor/aos/aos.css' %}" rel="stylesheet">
+  <link href="{% static 'vendor/bootstrap/css/bootstrap.min.css' %}" rel="stylesheet">
+  <link href="{% static 'vendor/bootstrap-icons/bootstrap-icons.css' %}" rel="stylesheet">
+  <link href="{% static 'vendor/boxicons/css/boxicons.min.css' %}" rel="stylesheet">
+  <link href="{% static 'vendor/glightbox/css/glightbox.min.css' %}" rel="stylesheet">
+  <link href="{% static 'vendor/swiper/swiper-bundle.min.css' %}" rel="stylesheet">
+
+  <!-- Template Main CSS File -->
+  <link href="{% static 'css/style.css' %}" rel="stylesheet">
+
+</head>
+
+<body>
+
+  <!-- ======= Top Bar ======= -->
+  <div id="topbar" class="d-flex align-items-center fixed-top">
+    <div class="container d-flex justify-content-center justify-content-md-between">
+      <a href="tel:+917043491996">
+        <div class="contact-info d-flex align-items-center">
+          <i class="bi bi-phone d-flex align-items-center"><span>+91 704 349 1996</span></i> </a>
+          <a href="mailto:parascaterers23@gmail.com"><i class="bi bi-envelope-fill d-flex align-items-center ms-4"><span>parascaterers23@gmail.com</a></span></i>
+        </div>
+    </div>
+  </div>
+
+  <!-- ======= Header ======= -->
+  <header id="header" class="fixed-top d-flex align-items-cente">
+    <div class="container-fluid container-xl d-flex align-items-center justify-content-lg-between">
+
+      <h1 class="logo me-auto me-lg-0"><a href="/">PARAS CATERERS</a></h1>
+      <!-- Uncomment below if you prefer to use an image logo -->
+      <!-- <a href="index.html" class="logo me-auto me-lg-0"><img src="{% static 'img/logo.png" alt="" class="img-fluid"></a>-->
+
+      <nav id="navbar" class="navbar order-last order-lg-0">
+        <ul>
+          <li><a class="nav-link scrollto active" href="#hero">Home</a></li>
+          <li><a class="nav-link scrollto" href="#about">About</a></li>
+          <li><a class="nav-link scrollto" href="#menu">Menu</a></li>
+          <li><a class="nav-link scrollto" href="#specials">Specials</a></li>
+          <li><a class="nav-link scrollto" href="#events">Events</a></li>
+          <li><a class="nav-link scrollto" href="#chefs">Our Staff</a></li>
+          <li><a class="nav-link scrollto" href="#gallery">Gallery</a></li>
+          <li><a class="nav-link scrollto" href="#contact">Contact</a></li>
+        </ul>
+        <i class="bi bi-list mobile-nav-toggle"></i>
+      </nav><!-- .navbar -->
+    </div>
+  </header><!-- End Header -->
+
+  <!-- ======= Hero Section ======= -->
+  <section id="hero" class="d-flex align-items-center">
+    <div class="container position-relative text-center text-lg-start" data-aos="zoom-in" data-aos-delay="100">
+      <div class="row">
+        <div class="col-lg-8">
+          <h1>Welcome to <span>Paras Caterers</span></h1>
+          <h2>Delivering great food for more than 20 years!</h2>
+
+          <div class="btns">
+            <a href="#menu" class="btn-menu animated fadeInUp scrollto">Our Menu</a>
+          </div>
+        </div>
+        {% comment %} <div class="col-lg-4 d-flex align-items-center justify-content-center position-relative" data-aos="zoom-in" data-aos-delay="200">
+          <a href="https://www.youtube.com/watch?v=u6BOC7CDUTQ" class="glightbox play-btn"></a>
+        </div> {% endcomment %}
+      </div>
+    </div>
+  </section><!-- End Hero -->
+
+  <main id="main">
+
+    <!-- ======= About Section ======= -->
+    <section id="about" class="about">
+      <div class="container" data-aos="fade-up">
+        <div class="row">
+          <div class="col-lg-6 order-1 order-lg-2" data-aos="zoom-in" data-aos-delay="100">
+            <div class="about-img">
+              <img src="{% static 'img/about.jpg' %}" alt="">
+            </div>
+          </div>
+          <div class="col-lg-6 pt-4 pt-lg-0 order-2 order-lg-1 content">
+            <h3>Welcome to Paras Caterers – Your Trusted Culinary Partner for Over 20 Years.</h3>
+            <p class="fst-italic">
+              At Paras Caterers, we believe that every event is a canvas to create a masterpiece of flavors and experiences. With a rich legacy spanning two decades, we have mastered the art of crafting delectable dishes that not only tantalize taste buds but also leave a lasting impression on every occasion.
+            </p>
+            <ul>
+              <li><i class="bi bi-check-circle"></i> Your Satisfaction, Our Commitment.</li>
+              <li><i class="bi bi-check-circle"></i> Trust in Flavors, Trust in Tradition.</li>
+              <li><i class="bi bi-check-circle"></i> Happiness Served on Every Plate.</li>
+              <li><i class="bi bi-check-circle"></i> Experience Matters.</li>
+            </ul>
+            <p>
+              For more than 20 years, Paras Caterers has been a prominent name in the catering industry, serving a diverse range of clients with excellence and innovation. Our journey began with a passion for creating exceptional culinary experiences, and today, we stand as a testament to the dedication, creativity, and craftsmanship that have fueled our success.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section><!-- End About Section -->
+
+    <!-- ======= Why Us Section ======= -->
+    <section id="why-us" class="why-us">
+      <div class="container" data-aos="fade-up">
+
+        <div class="section-title">
+          <h2>Why Us</h2>
+          <p>Why Choose Paras Caterers</p>
+        </div>
+
+        <div class="row">
+
+          <div class="col-lg-4">
+            <div class="box" data-aos="zoom-in" data-aos-delay="100">
+              <span>01</span>
+              <h4>Exquisite Culinary Craftsmanship</h4>
+              <p>At Paras Caterers, we believe that every event should be a gastronomic delight. Our team of experienced chefs crafts culinary masterpieces using the finest ingredients, ensuring that each dish is a work of art on your plate</p>
+            </div>
+          </div>
+
+          <div class="col-lg-4 mt-4 mt-lg-0">
+            <div class="box" data-aos="zoom-in" data-aos-delay="200">
+              <span>02</span>
+              <h4>Impeccable Service</h4>
+              <p>We take pride in our impeccable service standards. From the warm hospitality of our professional staff to the meticulous attention to detail, we ensure that every event we cater is a seamless and memorable experience for you and your guests</p>
+            </div>
+          </div>
+
+          <div class="col-lg-4 mt-4 mt-lg-0">
+            <div class="box" data-aos="zoom-in" data-aos-delay="300">
+              <span>03</span>
+              <h4> Tailored to Your Vision</h4>
+              <p>Your event is unique, and so are our catering solutions. We work closely with you to understand your vision and customize our offerings to match your preferences and budget, creating an event that reflects your personality and style</p>
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+    </section><!-- End Why Us Section -->
+
+    <!-- ======= Menu Section ======= -->
+    <section id="menu" class="menu section-bg">
+      <div class="container" data-aos="fade-up">
+
+        <div class="section-title">
+          <h2>Menu</h2>
+          <p>Check Our Tasty Menu</p>
+        </div>
+
+        
+        <div class="row menu-container" data-aos="fade-up" data-aos-delay="200">
+          <div class="col-lg-6 menu-item filter-starters">
+            <img src="{% static 'img/menu/soups.jpg' %}" class="menu-img" alt="">
+            <div class="menu-content">
+              <strong>Soups</strong>
+            </div>
+            <div class="menu-ingredients">
+              Vegetable Soup, Tomato Basil Soup, Manchow soup, Hot & Sour Soup, Sweet Potato Soup, etc.
+            </div>
+          </div>
+
+          <div class="col-lg-6 menu-item filter-specialty">
+            <img src="{% static '/img/menu/starters.jpg' %}" class="menu-img" alt="">
+            <div class="menu-content">
+              <strong>Starters</strong>
+            </div>
+            <div class="menu-ingredients">
+              Paneer Tikka, Hara Bhara Kabab, Cheese Balls, Aloo Tikki, etc.
+            </div>
+          </div>
+
+          <div class="col-lg-6 menu-item filter-starters">
+            <img src="{% static 'img/menu/moctails.jpg' %}" class="menu-img" alt="">
+            <div class="menu-content">
+              <strong>Juice & Mocktails</strong>
+            </div>
+            <div class="menu-ingredients">
+              Virgin Mojito, Mango Tango, Virgin Pina Colada, Fruit Punch, All Type of Juices, etc.
+            </div>
+          </div>
+
+          <div class="col-lg-6 menu-item filter-salads">
+            <img src="{% static 'img/menu/appetizer.jpg' %}" class="menu-img" alt="">
+            <div class="menu-content">
+              <strong>Appetizer Bar</strong>
+            </div>
+            <div class="menu-ingredients">
+              Vegetable Spring Rolls, Crispy Samosas, Vegetable Pakoras, Petis, etc.
+            </div>
+          </div>
+
+          <div class="col-lg-6 menu-item filter-specialty">
+            <img src="{% static 'img/menu/chaat.jpg' %}" class="menu-img" alt="">
+            <div class="menu-content">
+              <strong>Indian chat & Snacks</strong>
+            </div>
+            <div class="menu-ingredients">
+              Pani Puri/Golgappa, Dahi Puri, Aloo Tikki Chaat, Dhokla, Kachori, Dahi Vada, Masala Papad, etc.
+            </div>
+          </div>
+
+          <div class="col-lg-6 menu-item filter-starters">
+            <img src="{% static 'img/menu/Italian.jpg' %}" class="menu-img" alt="">
+            <div class="menu-content">
+              <strong>Italian Station</strong>
+            </div>
+            <div class="menu-ingredients">
+              All type of Pizzas, All type of Pasta, etc.
+            </div>
+          </div>
+
+          <div class="col-lg-6 menu-item filter-salads">
+            <img src="{% static 'img/menu/BBQ.jpg' %}" class="menu-img" alt="">
+            <div class="menu-content">
+              <strong>BBQ Station</strong>
+            </div>
+            <div class="menu-ingredients">
+              Grilled Corn on the Cob, BBQ Tofu Skewers, BBQ Veggie Kebabs, Grilled Paneer Tikka, Soya & Paneer Chaap, etc
+            </div>
+          </div>
+
+          <div class="col-lg-6 menu-item filter-salads">
+            <img src="{% static 'img/menu/main_course.jpg' %}" class="menu-img" alt="">
+            <div class="menu-content">
+              <strong>Main Course</strong>
+            </div>
+            <div class="menu-ingredients">
+              Paneer Dishes, Vegetable Curries, Lentil Dishes (Dals), Rice Dishes, Roti and Naan, Raita, Papad, Pickle, Salad, Sides, etc.
+            </div>
+          </div>
+
+          <div class="col-lg-6 menu-item filter-specialty">
+            <img src="{% static 'img/menu/sweet_dessert.jpg' %}" class="menu-img" alt="">
+            <div class="menu-content">
+              <strong>Sweet & Dessert counters</strong>
+            </div>
+            <div class="menu-ingredients">
+              Alltype of Ice Creams, Rasgullas, Gulab Jamun, Ras Malai, Fruit Chaat, Paans, Jalebi, and other various sweets, etc.
+            </div>
+          </div>
+
+          <div class="col-lg-6 menu-item filter-specialty">
+            <img src="{% static 'img/menu/livecounters.jpg' %}" class="menu-img" alt="">
+            <div class="menu-content">
+              <strong>Live Cooking Demonstrations</strong>
+            </div>
+            <div class="menu-ingredients">
+              Dosa and Uttapam Station, Live Tandoor Station, Dhokla, Live Tawa Pulao Station, Live Veg Mixes Station, etc.
+            </div>
+          </div>
+        </div>
+
+        <hr><div class="row" data-aos="fade-up" data-aos-delay="100">
+          <div class="col-lg-12 d-flex justify-content-left">
+            <p>
+              <strong> <p class="note">NOTE:&nbsp;&nbsp;</p></strong> All the below mentioned items and dishes are just for basic reference, we have quite wide range of varieties, for betther undestanding kindly contact us.
+            </p>
+          </div>
+        </div>
+
+      </div>
+    </section><!-- End Menu Section -->
+
+    <!-- ======= Specials Section ======= -->
+    <section id="specials" class="specials">
+      <div class="container" data-aos="fade-up">
+
+        <div class="section-title">
+          <h2>Specials</h2>
+          <p>Check Our Specials</p>
+        </div>
+
+        <div class="row" data-aos="fade-up" data-aos-delay="100">
+          <div class="col-lg-3">
+            <ul class="nav nav-tabs flex-column">
+              <li class="nav-item">
+                <a class="nav-link active show" data-bs-toggle="tab" href="#tab-1">Gujarati Cuisine</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" data-bs-toggle="tab" href="#tab-2">Punjabi Cuisine</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" data-bs-toggle="tab" href="#tab-3">Italian Cuisine</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" data-bs-toggle="tab" href="#tab-4">Chinese Cuisine</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" data-bs-toggle="tab" href="#tab-5">Desserts and Sweets</a>
+              </li>
+            </ul>
+          </div>
+          <div class="col-lg-9 mt-4 mt-lg-0">
+            <div class="tab-content">
+              <div class="tab-pane active show" id="tab-1">
+                <div class="row">
+                  <div class="col-lg-8 details order-2 order-lg-1">
+                    <h3>Flavors of Gujarat: Where Tradition Meets Taste</h3>
+                    <p class="fst-italic">Gujarati cuisine is renowned for its diversity of flavors. It balances sweet, savory, spicy, and tangy elements in a single meal, creating a unique and delightful taste experience</p>
+                    <p>Gujarati cuisine is known for its variety of vegetarian dishes and its distinctive sweet and savory flavors. It includes dishes like dhokla, thepla, khandvi, and a variety of dals and vegetable preparations</p>
+                  </div>
+                  <div class="col-lg-4 text-center order-1 order-lg-2">
+                    <img src="{% static 'img/specials-1.png' %}" alt="" class="img-fluid">
+                  </div>
+                </div>
+              </div>
+              <div class="tab-pane" id="tab-2">
+                <div class="row">
+                  <div class="col-lg-8 details order-2 order-lg-1">
+                    <h3>Punjabi Flavors: A Taste of Rich Traditions</h3>
+                    <p class="fst-italic">Punjabi cuisine is renowned for its rich and robust flavors. It's characterized by the use of spices and ingredients like ghee, butter, cream, and a variety of aromatic spices, creating a palate-pleasing and indulgent experience</p>
+                    <p>Punjabi cuisine is known for its rich and hearty flavors. It includes popular dishes like butter chicken, tandoori roti, chole bhature, and various types of kebabs and curries</p>
+                  </div>
+                  <div class="col-lg-4 text-center order-1 order-lg-2">
+                    <img src="{% static 'img/specials-2.png' %}" alt="" class="img-fluid">
+                  </div>
+                </div>
+              </div>
+              <div class="tab-pane" id="tab-3">
+                <div class="row">
+                  <div class="col-lg-8 details order-2 order-lg-1">
+                    <h3>Italian Delights: Where Every Bite is a Taste of Italy</h3>
+                    <p class="fst-italic">Italian cuisine has a rich and storied history that dates back centuries. It is deeply rooted in tradition, with recipes often passed down through generations, making it an essential part of Italy's cultural identity</p>
+                    <p>Italian cuisine is loved for its pasta dishes, pizzas, risottos, and a wide range of appetizers and desserts. It offers a mix of flavors and ingredients like tomatoes, olive oil, and cheese</p>
+                  </div>
+                  <div class="col-lg-4 text-center order-1 order-lg-2">
+                    <img src="{% static 'img/specials-3.png' %}" alt="" class="img-fluid">
+                  </div>
+                </div>
+              </div>
+              <div class="tab-pane" id="tab-4">
+                <div class="row">
+                  <div class="col-lg-8 details order-2 order-lg-1">
+                    <h3>Savoring China: A Journey of Authentic Flavors</h3>
+                    <p class="fst-italic">Chinese cuisine is one of the world's oldest and most diverse culinary traditions, with a history spanning thousands of years. It reflects the cultural and geographical diversity of China</p>
+                    <p>Chinese cuisine offers a variety of flavors and textures, including sweet, sour, spicy, and savory. It includes dishes like fried rice, chow mein, spring rolls, and various types of stir-fries</p>
+                  </div>
+                  <div class="col-lg-4 text-center order-1 order-lg-2">
+                    <img src="{% static 'img/specials-4.png' %}" alt="" class="img-fluid">
+                  </div>
+                </div>
+              </div>
+              <div class="tab-pane" id="tab-5">
+                <div class="row">
+                  <div class="col-lg-8 details order-2 order-lg-1">
+                    <h3>Indulge Your Senses: Sweet Moments, Sweet Memories</h3>
+                    <p class="fst-italic">Desserts and sweets are an integral part of cultural traditions and celebrations worldwide. They often symbolize joy, prosperity, and togetherness, and are featured prominently in festivals, weddings, and holidays</p>
+                    <p>Don't forget to include a dessert category with a variety of sweet treats like cakes, pastries, ice creams, and traditional sweets like gulab jamun and rasgulla</p>
+                  </div>
+                  <div class="col-lg-4 text-center order-1 order-lg-2">
+                    <img src="{% static 'img/specials-5.png' %}" alt="" class="img-fluid">
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </section><!-- End Specials Section -->
+
+    <!-- ======= Events Section ======= -->
+    <section id="events" class="events">
+      <div class="container" data-aos="fade-up">
+
+        <div class="section-title">
+          <h2>Events</h2>
+          <p>Organize Your Events with us</p>
+        </div>
+
+        <div class="events-slider swiper" data-aos="fade-up" data-aos-delay="100">
+          <div class="swiper-wrapper">
+
+            <div class="swiper-slide">
+              <div class="row event-item">
+                <div class="col-lg-6">
+                  <img src="{% static 'img/event-wedding.jpg' %}" class="img-fluid" alt="">
+                </div>
+                <div class="col-lg-6 pt-4 pt-lg-0 content">
+                  <h3>Wedding Events</h3>
+                  <p class="fst-italic">
+                    Savoring Love, One Bite at a Time
+                  </p>
+                  <ul>
+                    <li><i class="bi bi-check-circled"></i> Catering Fit for Love's Grand Celebration: Transform your wedding day into an unforgettable culinary journey with our exquisite catering services.</li>
+                    <li><i class="bi bi-check-circled"></i> Wedding Feasts, Tailored to Perfection: Our passion is to design custom wedding menus that reflect your love story, creating flavors that linger in the hearts of your guests.
+                    </li>
+                    <li><i class="bi bi-check-circled"></i> Wedding Feasts, Tailored to Perfection: Our passion is to design custom wedding menus that reflect your love story, creating flavors that linger in the hearts of your guests.</li>
+                  </ul>
+                </div>
+              </div>
+            </div><!-- End testimonial item -->
+
+            <div class="swiper-slide">
+              <div class="row event-item">
+                <div class="col-lg-6">
+                  <img src="{% static 'img/event-corporate.jpg' %}" class="img-fluid" alt="">
+                </div>
+                <div class="col-lg-6 pt-4 pt-lg-0 content">
+                  <h3>Corporate Events</h3>
+                  <p class="fst-italic">
+                    Your Event, Our Expertise.
+                  </p>
+                  <ul>
+                    <li><i class="bi bi-check-circled"></i> Elevate your corporate events with our exceptional catering services. Whether it's a high-profile business conference, a product launch, or an office celebration, we specialize in creating culinary experiences that leave a lasting impression.</li>
+                    <li><i class="bi bi-check-circled"></i> Our professional team is dedicated to providing seamless service, innovative menus, and a sophisticated presentation to complement the corporate ambiance.</li>
+                    <li><i class="bi bi-check-circled"></i> Trust us to enhance your corporate gatherings with a touch of culinary excellence.</li>
+                  </ul>
+                </div>
+              </div>
+            </div><!-- End testimonial item -->
+
+            <div class="swiper-slide">
+              <div class="row event-item">
+                <div class="col-lg-6">
+                  <img src="{% static 'img/event-custom.jpg' %}" class="img-fluid" alt="">
+                </div>
+                <div class="col-lg-6 pt-4 pt-lg-0 content">
+                  <h3>Custom Events/Parties</h3>
+                  <p class="fst-italic">
+                    Crafting Unforgettable Moments, Few Bites in Your Style.
+                  </p>
+                  <ul>
+                    <li><i class="bi bi-check-circled"></i> Transform your custom events and parties into unforgettable culinary journeys with Paras Caterers.</li>
+                    <li><i class="bi bi-check-circled"></i> We specialize in crafting unique, personalized menus that cater to your every taste and desire.</li>
+                    <li><i class="bi bi-check-circled"></i> From intimate gatherings to grand celebrations, we ensure that your event is a flavorful reflection of your vision, making each moment truly special.</li>
+                  </ul>
+                </div>
+              </div>
+            </div><!-- End testimonial item -->
+
+            <div class="swiper-slide">
+              <div class="row event-item">
+                <div class="col-lg-6">
+                  <img src="{% static 'img/event-Canteen.jpg' %}" class="img-fluid" alt="">
+                </div>
+                <div class="col-lg-6 pt-4 pt-lg-0 content">
+                  <h3>Industrial/ School-College Canteen Contracts</h3>
+                  <p class="fst-italic">
+                    Feeding Innovation, Nourishing Futures.
+                  </p>
+                  <ul>
+                    <li><i class="bi bi-check-circled"></i> At Paras Caterers, we understand that great food can bring people together and boost productivity. Whether it's a school cafeteria or an industrial canteen, we take pride in delivering exceptional dining solutions that satisfy taste buds, promote well-being, and foster a sense of community.</li>
+                    <li><i class="bi bi-check-circled"></i> With a keen focus on hygiene, quality, and affordability, we've earned a reputation for excellence in canteen management. Our team of culinary experts is committed to crafting diverse menus that cater to the unique tastes and dietary needs of students, faculty, and employees alike.</li>
+                  </ul>
+                </div>
+              </div>
+            </div><!-- End testimonial item -->
+          </div>
+          <div class="swiper-pagination"></div>
+        </div>
+
+      </div>
+    </section><!-- End Events Section -->
+
+    <!-- ======= Testimonials Section ======= -->
+    <section id="testimonials" class="testimonials section-bg">
+      <div class="container" data-aos="fade-up">
+        <div class="section-title">
+          <h2>Testimonials</h2>
+          <p>What they're saying about us</p>
+        </div>
+
+        <div class="testimonials-slider swiper" data-aos="fade-up" data-aos-delay="100">
+          <div class="swiper-wrapper">
+            <div class='sk-ww-google-reviews' data-embed-id='188355'></div><script src='https://widgets.sociablekit.com/google-reviews/widget.js' async defer></script>
+          </div>
+          <div class="swiper-pagination"></div>
+        </div>
+
+      </div>
+    </section><!-- End Testimonials Section -->
+
+    <!-- ======= Gallery Section ======= -->
+    <section id="gallery" class="gallery">
+
+      <div class="container" data-aos="fade-up">
+        <div class="section-title">
+          <h2>Gallery</h2>
+          <p>Few Precious Memories of Our Clients</p>
+        </div>
+      </div>
+
+      <div class="container-fluid" data-aos="fade-up" data-aos-delay="100">
+        <div class="row g-0">
+          <div class="col-lg-3 col-md-4">
+            <div class="gallery-item">
+              <a href="{% static 'img/gallery/gallery-1.jpg' %}" class="gallery-lightbox" data-gall="gallery-item">
+                <img src="{% static 'img/gallery/gallery-1.jpg' %}" alt="" class="img-fluid">
+              </a>
+            </div>
+          </div>
+
+          <div class="col-lg-3 col-md-4">
+            <div class="gallery-item">
+              <a href="{% static 'img/gallery/gallery-2.jpg' %}" class="gallery-lightbox" data-gall="gallery-item">
+                <img src="{% static 'img/gallery/gallery-2.jpg' %}" alt="" class="img-fluid">
+              </a>
+            </div>
+          </div>
+
+          <div class="col-lg-3 col-md-4">
+            <div class="gallery-item">
+              <a href="{% static 'img/gallery/gallery-3.jpg' %}" class="gallery-lightbox" data-gall="gallery-item">
+                <img src="{% static 'img/gallery/gallery-3.jpg' %}" alt="" class="img-fluid">
+              </a>
+            </div>
+          </div>
+
+          <div class="col-lg-3 col-md-4">
+            <div class="gallery-item">
+              <a href="{% static 'img/gallery/gallery-4.jpg' %}" class="gallery-lightbox" data-gall="gallery-item">
+                <img src="{% static 'img/gallery/gallery-4.jpg' %}" alt="" class="img-fluid">
+              </a>
+            </div>
+          </div>
+
+          <div class="col-lg-3 col-md-4">
+            <div class="gallery-item">
+              <a href="{% static 'img/gallery/gallery-5.jpg' %}" class="gallery-lightbox" data-gall="gallery-item">
+                <img src="{% static 'img/gallery/gallery-5.jpg' %}" alt="" class="img-fluid">
+              </a>
+            </div>
+          </div>
+
+          <div class="col-lg-3 col-md-4">
+            <div class="gallery-item">
+              <a href="{% static 'img/gallery/gallery-6.jpg' %}" class="gallery-lightbox" data-gall="gallery-item">
+                <img src="{% static 'img/gallery/gallery-6.jpg' %}" alt="" class="img-fluid">
+              </a>
+            </div>
+          </div>
+
+          <div class="col-lg-3 col-md-4">
+            <div class="gallery-item">
+              <a href="{% static 'img/gallery/gallery-7.jpg' %}" class="gallery-lightbox" data-gall="gallery-item">
+                <img src="{% static 'img/gallery/gallery-7.jpg' %}" alt="" class="img-fluid">
+              </a>
+            </div>
+          </div>
+
+          <div class="col-lg-3 col-md-4">
+            <div class="gallery-item">
+              <a href="{% static 'img/gallery/gallery-8.jpg' %}" class="gallery-lightbox" data-gall="gallery-item">
+                <img src="{% static 'img/gallery/gallery-8.jpg' %}" alt="" class="img-fluid">
+              </a>
+            </div>
+          </div>
+
+          <div class="col-lg-3 col-md-4">
+            <div class="gallery-item">
+              <a href="{% static 'img/gallery/gallery-14.jpg' %}" class="gallery-lightbox" data-gall="gallery-item">
+                <img src="{% static 'img/gallery/gallery-14.jpg' %}" alt="" class="img-fluid">
+              </a>
+            </div>
+          </div>
+
+          <div class="col-lg-3 col-md-4">
+            <div class="gallery-item">
+              <a href="{% static 'img/gallery/gallery-10.jpg' %}" class="gallery-lightbox" data-gall="gallery-item">
+                <img src="{% static 'img/gallery/gallery-10.jpg' %}" alt="" class="img-fluid">
+              </a>
+            </div>
+          </div>
+
+          <div class="col-lg-3 col-md-4">
+            <div class="gallery-item">
+              <a href="{% static 'img/gallery/gallery-11.jpg' %}" class="gallery-lightbox" data-gall="gallery-item">
+                <img src="{% static 'img/gallery/gallery-11.jpg' %}" alt="" class="img-fluid">
+              </a>
+            </div>
+          </div>
+
+          <div class="col-lg-3 col-md-4">
+            <div class="gallery-item">
+              <a href="{% static 'img/gallery/gallery-12.jpg' %}" class="gallery-lightbox" data-gall="gallery-item">
+                <img src="{% static 'img/gallery/gallery-12.jpg' %}" alt="" class="img-fluid">
+              </a>
+            </div>
+          </div>
+          <div class="col-lg-3 col-md-4">
+            <div class="gallery-item">
+            </div>
+          </div>
+        </div>
+      </div>
+      
+    </section><!-- End Gallery Section -->
+
+    <!-- ======= Chefs Section ======= -->
+    <section id="chefs" class="chefs">
+      <div class="container" data-aos="fade-up">
+        <div class="section-title">
+          <p>Our Proffesional Staff</p>
+          <h2>Chefs, PRO and Support Staff</h2>
+        </div>
+        <div class="row">
+          <div class="col-lg-4 col-md-6">
+            <div class="section-title">
+              <h2>CHEFS</h2>
+            </div>
+            <p>
+              Our team of chefs is the culinary heartbeat of our catering service. With years of experience and a passion for creating exceptional dishes, our chefs are masters in their craft. They bring creativity and expertise to every event, whether it's a corporate luncheon, wedding banquet, or custom celebration. From conceptualizing bespoke menus to executing each dish with precision and flair, our chefs are dedicated to delivering a gastronomic experience that exceeds expectations. They're not just cooks; they're artists who transform fresh, high-quality ingredients into memorable culinary masterpieces.
+            </p>
+          </div>
+          <div class="col-lg-4 col-md-6">
+            <div class="section-title">
+              <h2>PRO Staff</h2>
+            </div>
+              <p>
+                Our professional service staff, or PROs, are the backbone of our catering operation. They are meticulously trained to provide impeccable service, ensuring that every guest's experience is seamless and enjoyable. Our PROs understand the importance of attention to detail, from setting up the perfect table settings to offering warm and courteous hospitality. They are the face of our brand, representing our commitment to excellence in every interaction. Whether it's a corporate event or an intimate gathering, our PROs are dedicated to making your event run smoothly and leaving a lasting positive impression.
+              </p>
+          </div>
+          <div class="col-lg-4 col-md-6">
+            <div class="section-title">
+              <h2>Support Staff</h2>
+            </div>
+              <p>
+                Behind the scenes, our dedicated support staff plays a crucial role in making your catering event a success. From event coordinators and planners to logistics experts and kitchen assistants, our support team works tirelessly to ensure that all aspects of your event are flawlessly executed. They handle the intricate coordination of timelines, logistics, and behind-the-scenes tasks that are essential for a seamless event. Their commitment to excellence and teamwork ensures that everything runs smoothly, allowing you to relax and enjoy your event with complete peace of mind.
+              </p>
+          </div>
+          <p>
+            At Paras Caterers, our team of chefs, PROs, and support staff collaborates harmoniously to bring your vision to life, creating a culinary and service experience that is truly exceptional.
+          </p>
+        </div>
+      </div>
+    </section><!-- End Chefs Section -->
+
+    <!-- ======= Contact Section ======= -->
+    <section id="contact" class="contact">
+      <div class="container" data-aos="fade-up">
+
+        <div class="section-title">
+          <h2>Contact</h2>
+          <p>Contact Us</p>
+        </div>
+      </div>
+
+      <div data-aos="fade-up">
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3691.2891219391363!2d73.19370607544268!3d22.304902779683342!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x395fcff6cd5b7441%3A0x859926023efdb61c!2sParas%20Caterers!5e0!3m2!1sen!2sin!4v1693540818011!5m2!1sen!2sin" width="1400" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+      </div>
+
+      <div class="container" data-aos="fade-up">
+
+        <div class="row mt-5">
+
+          <div class="col-lg-4">
+            <div class="info">
+              <div class="address">
+                <i class="bi bi-geo-alt"></i>
+                <h4>Location:</h4>
+                <p>39, Mamani pole, Raopura, Jambubet, Vadodara, Gujarat 390001</p>
+              </div>
+              <div class="email">
+                <i class="bi bi-envelope"></i>
+                <h4>Email:</h4>
+                <a href="mailto:parascaterers23@gmail.com" target="_blank"><p>parascaterers23@gmail.com</p></a>
+              </div>
+
+              <div class="phone">
+                <i class="bi bi-phone"></i>
+                <h4>Call:</h4>
+                <p>+91 7043 491 996</p>
+              </div>
+
+            </div>
+
+          </div>
+
+          <div class="col-lg-8 mt-5 mt-lg-0">
+            <form action="{% url 'index' %}" method="post" role="form" class="php-email-form">
+              {% csrf_token %}
+              <div class="row">
+                <div class="col-md-6 form-group">
+                  <input type="text" name="name" class="form-control" id="name" placeholder="Your Name" required>
+                </div>
+                <div class="col-md-6 form-group mt-3 mt-md-0">
+                  <input type="email" class="form-control" name="email" id="email" placeholder="Your Email" required>
+                </div>
+              </div>
+              <div class="form-group mt-3">
+                <input type="text" class="form-control" name="subject" id="subject" placeholder="Subject" required>
+              </div>
+              <div class="form-group mt-3">
+                <textarea class="form-control" name="message" rows="8" placeholder="Message" required></textarea>
+              </div>
+              <div class="my-3">
+                <div class="loading">Loading</div>
+                <div class="error-message"></div>
+                <div class="sent-message">Your message has been sent. Thank you!</div>
+              </div>
+              <div class="text-center"><button type="submit">Send Message</button></div>
+            </form>
+
+          </div>
+
+        </div>
+
+      </div>
+    </section><!-- End Contact Section -->
+
+  </main><!-- End #main -->
+
+  <!-- ======= Footer ======= -->
+  <footer id="footer">
+    <div class="footer-top">
+      <div class="container">
+        <div class="row">
+
+          <div class="col-lg-3 col-md-6">
+            <div class="footer-info">
+              <h3>Paras Caterers</h3>
+              <p>
+                39, Mamani pole, Raopura, Vadodara <br>
+                Gujarat 390001, India<br><br>
+                <strong>Phone:</strong> +91 7043 491 996<br>
+                <strong>Email:</strong> <a href="mailto:parascaterers23@gmail.com" target="_blank">parascaterers23@gmail.com</a><br>
+              </p>
+              <div class="social-links mt-3">
+                <a href="#" class="twitter"><i class="bx bxl-twitter"></i></a>
+                <a href="#" class="facebook"><i class="bx bxl-facebook"></i></a>
+                <a href="#" class="instagram"><i class="bx bxl-instagram"></i></a>
+                <a href="#" class="google-plus"><i class="bx bxl-skype"></i></a>
+                <a href="#" class="linkedin"><i class="bx bxl-linkedin"></i></a>
+              </div>
+            </div>
+          </div>
+
+          {% comment %} <div class="col-lg-2 col-md-6 footer-links">
+            <h4>Useful Links</h4>
+            <ul>
+              <li><i class="bx bx-chevron-right"></i> <a href="#">Home</a></li>
+              <li><i class="bx bx-chevron-right"></i> <a href="#">About us</a></li>
+              <li><i class="bx bx-chevron-right"></i> <a href="#">Services</a></li>
+              <li><i class="bx bx-chevron-right"></i> <a href="#">Terms of service</a></li>
+              <li><i class="bx bx-chevron-right"></i> <a href="#">Privacy policy</a></li>
+            </ul>
+          </div>
+
+          <div class="col-lg-3 col-md-6 footer-links">
+            <h4>Our Services</h4>
+            <ul>
+              <li><i class="bx bx-chevron-right"></i> <a href="#">Web Design</a></li>
+              <li><i class="bx bx-chevron-right"></i> <a href="#">Web Development</a></li>
+              <li><i class="bx bx-chevron-right"></i> <a href="#">Product Management</a></li>
+              <li><i class="bx bx-chevron-right"></i> <a href="#">Marketing</a></li>
+              <li><i class="bx bx-chevron-right"></i> <a href="#">Graphic Design</a></li>
+            </ul>
+          </div>
+
+          <div class="col-lg-4 col-md-6 footer-newsletter">
+            <h4>Our Newsletter</h4>
+            <p>Tamen quem nulla quae legam multos aute sint culpa legam noster magna</p>
+            <form action="" method="post">
+              <input type="email" name="email"><input type="submit" value="Subscribe">
+            </form>
+
+          </div> {% endcomment %}
+
+        </div>
+      </div>
+    </div>
+
+    <div class="container">
+      <div class="copyright">
+        &copy;2023 Copyright <strong><span>Paras Caterers</span></strong>. All Rights Reserved
+      </div>
+      <div class="credits">
+        <!-- All the links in the footer should remain intact. -->
+        <!-- You can delete the links only if you purchased the pro version. -->
+        <!-- Licensing information: https://bootstrapmade.com/license/ -->
+        <!-- Purchase the pro version with working PHP/AJAX contact form: https://bootstrapmade.com/restaurantly-restaurant-template/ -->
+        Designed by <a href="https://www.linkedin.com/in/chandresh-sharma-0b250b12a/">Chandresh Sharma</a>
+      </div>
+    </div>
+  </footer><!-- End Footer -->
+
+  <div id="preloader"></div>
+  <a href="#" class="back-to-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
+
+  <!-- Vendor JS Files -->
+  {% load static %}
+  <script src="{% static 'vendor/aos/aos.js' %}"></script>
+  <script src="{% static 'vendor/bootstrap/js/bootstrap.bundle.min.js' %}"></script>
+  <script src="{% static 'vendor/glightbox/js/glightbox.min.js' %}"></script>
+  <script src="{% static 'vendor/isotope-layout/isotope.pkgd.min.js' %}"></script>
+  <script src="{% static 'vendor/swiper/swiper-bundle.min.js' %}"></script>
+  <script src="{% static 'vendor/php-email-form/validate.js' %}"></script>
+  <!-- Template Main JS File -->
+  <script src="{% static 'js/main.js' %}"></script>
+
+  </body>
+</html>
