@@ -22,6 +22,7 @@ from django.conf.urls.static import static
 urlpatterns = [
     path('admin/', admin.site.urls),
     path("", views.index, name='index'),
+    path('inner-page/', views.gallery_view, name='gallery_view'),
 ]
 
 if settings.DEBUG:

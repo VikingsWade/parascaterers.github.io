@@ -25,3 +25,7 @@ def index(request):
 
     return render(request, "index.html")
 
+def gallery_view(request):
+    return render(request, 'inner-page.html')
+
+

@@ -776,7 +776,6 @@ section {
   background: url("../img/about-bg.jpg") center center;
   background-size: cover;
   position: relative;
-  padding: 80px 0;
 }
 
 .about:before {
