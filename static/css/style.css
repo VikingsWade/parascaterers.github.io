@@ -203,6 +203,23 @@ h6 {
   max-height: 40px;
 }
 
+@media (min-width: 641px) and (max-width: 868px){
+  #header .logo {
+    margin-left: auto;
+  }
+
+  #header .navbar{
+    margin: auto;
+  }
+}
+
+@media (min-width: 641px) and (max-width: 868px){
+  #header {
+    padding: 0;
+    padding-top: 8px;
+  }
+}
+
 /*--------------------------------------------------------------
 # Navigation Menu
 --------------------------------------------------------------*/
@@ -327,7 +344,7 @@ h6 {
   transition: 0.5s;
 }
 
-@media (max-width: 991px) {
+@media (max-width: 640px) {
   .mobile-nav-toggle {
     display: block;
   }
@@ -621,12 +638,25 @@ section {
   overflow: hidden;
 }
 
+@media (max-width: 768px) {
+  section {
+    padding: 40px 0;
+    overflow: hidden;
+  }
+}
+
 .section-bg {
   background-color: #1a1814;
 }
 
 .section-title {
   padding-bottom: 40px;
+}
+
+@media (max-width: 768px) {
+  .section-title {
+    padding-bottom: 14px;
+  }
 }
 
 .section-title h2 {
@@ -641,6 +671,20 @@ section {
   font-family: "Poppins", sans-serif;
 }
 
+@media (max-width: 768px) {
+  .section-title h2 {
+    font-size: 14px;
+  font-weight: 500;
+  padding: 0;
+  line-height: 12px;
+  margin: 0 0 5px 0;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  color: #aaaaaa;
+  font-family: "Poppins", sans-serif;
+  }
+}
+
 .section-title h2::after {
   content: "";
   width: 120px;
@@ -648,6 +692,18 @@ section {
   display: inline-block;
   background: rgba(255, 255, 255, 0.2);
   margin: 4px 10px;
+}
+
+/* Styles for screens 620px and narrower */
+@media (max-width: 768px) {
+  .section-title h2::after {
+    content: "\A"; /* This adds a line break using the '\A' escape sequence */
+    width: 120px;
+    height: 1px;
+    display: inline-block;
+    background: rgba(255, 255, 255, 0.2);
+    margin: 0px 1px;
+  }
 }
 
 .section-title p {
@@ -1665,4 +1721,30 @@ section {
   text-align: center;
   font-size: 13px;
   color: #fff;
+}
+
+@media (max-width: 768px) {
+  .smmargin {
+    margin-top: 9px;
+  }
+}
+
+@media (max-width: 768px) {
+  p {
+    margin-top: 0px;
+    margin-bottom: 3rem;
+  }
+}
+
+/* Google Review buttons */
+.swiper-button-next, .swiper-button-prev {
+  display:none;
+}
+
+/* Google Map iframe */
+@media (max-width: 768px) {
+  div[data-aos="fade-up"] iframe {
+      width: 100%; /* Make the iframe full width */
+      height: 300px; /* Adjust the height as needed for your design */
+  }
 }
