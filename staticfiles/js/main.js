@@ -5,30 +5,29 @@
  * Author: BootstrapMade.com
  * License: https://bootstrapmade.com/license/
  */
-jQuery(document).ready(function($) {
+$(document).ready(function (){
   "use strict";
 
-
   // Handle form submission
-  $('form.php-email-form').on('submit', function(e)
-  {
-    e.preventDefault();
-    // Show the small loader initially
-    //$('.loading').show();
-    // Hide the submit button
-    //$('button[type="submit"]').prop('disabled', true);
+$('form.php-email-form').on('submit', function(e) {
+  e.preventDefault();
+  // Show the small loader initially
+  $('.loading').show();
+  // Hide the submit button
+  $('button[type="submit"]').prop('disabled', true);
 
-    // Simulate a delay (remove this in your actual code)
-    // setTimeout(function() {
-    //   // Hide the small loader
-    //   $('.loading').hide();
-    //   // Show the big loader
-    //   // $('#preloader').show();
-    //   // Submit the form
-    //   $(this).unbind('submit').submit();
-    // }, 2000); // Adjust the delay as needed, this is just a placeholder
+  // Simulate a delay (remove this in your actual code)
+  setTimeout(function() {
+    // Hide the small loader
+    $('.loading').hide();
+
+    // Submit the form
+    $(this).unbind('submit').submit();
+
+    // Reload the page after the form is submitted
     location.reload();
-  });
+  }, 2000); // Adjust the delay as needed, this is just a placeholder
+});
   /**
    * Easy selector helper function
    */
@@ -196,36 +195,6 @@ jQuery(document).ready(function($) {
   }
 
   /**
-   * Menu isotope and filter
-   */
-  $(window).on('load', () => {
-    let menuContainer = select('.menu-container')
-    if (menuContainer.length) {
-      let menuIsotope = new Isotope(menuContainer, {
-        itemSelector: '.menu-item',
-        layoutMode: 'fitRows'
-      })
-
-      let menuFilters = select('#menu-flters li', true)
-
-      on('click', '#menu-flters li', function(e) {
-        e.preventDefault()
-        menuFilters.each(function() {
-          $(this).removeClass('filter-active')
-        })
-        $(this).addClass('filter-active')
-
-        menuIsotope.arrange({
-          filter: $(this).attr('data-filter')
-        })
-        menuIsotope.on('arrangeComplete', function() {
-          AOS.refresh()
-        })
-      }, true)
-    }
-  })
-
-  /**
    * Initiate glightbox 
    */
   const glightbox = GLightbox({
@@ -251,35 +220,6 @@ jQuery(document).ready(function($) {
   })
 
   /**
-   * Testimonials slider
-   */
-  new Swiper('.testimonials-slider', {
-    speed: 600,
-    loop: true,
-    autoplay: {
-      delay: 5000,
-      disableOnInteraction: false
-    },
-    slidesPerView: 'auto',
-    pagination: {
-      el: '.swiper-pagination',
-      type: 'bullets',
-      clickable: true
-    },
-    breakpoints: {
-      320: {
-        slidesPerView: 1,
-        spaceBetween: 20
-      },
-
-      1200: {
-        slidesPerView: 3,
-        spaceBetween: 20
-      }
-    }
-  })
-
-  /**
    * Initiate gallery lightbox 
    */
   const galleryLightbox = GLightbox({
@@ -297,4 +237,4 @@ jQuery(document).ready(function($) {
       mirror: false
     })
   })
-})
+});
