@@ -203,31 +203,20 @@ h6 {
   max-height: 40px;
 }
 
-/*--------------------------------------------------------------
-# Book a table button Menu
---------------------------------------------------------------*/
-.book-a-table-btn {
-  margin: 0 0 0 15px;
-  border: 2px solid #cda45e;
-  color: #fff;
-  border-radius: 50px;
-  padding: 8px 25px;
-  text-transform: uppercase;
-  font-size: 13px;
-  font-weight: 500;
-  letter-spacing: 1px;
-  transition: 0.3s;
+@media (min-width: 641px) and (max-width: 868px){
+  #header .logo {
+    margin-left: auto;
+  }
+
+  #header .navbar{
+    margin: auto;
+  }
 }
 
-.book-a-table-btn:hover {
-  background: #cda45e;
-  color: #fff;
-}
-
-@media (max-width: 992px) {
-  .book-a-table-btn {
-    margin: 0 15px 0 0;
-    padding: 8px 20px;
+@media (min-width: 641px) and (max-width: 868px){
+  #header {
+    padding: 0;
+    padding-top: 8px;
   }
 }
 
@@ -355,7 +344,7 @@ h6 {
   transition: 0.5s;
 }
 
-@media (max-width: 991px) {
+@media (max-width: 640px) {
   .mobile-nav-toggle {
     display: block;
   }
@@ -449,6 +438,23 @@ h6 {
   display: block;
 }
 
+/*--------------------------------------------------------------
+# Topbar section provide margin to mobile number and email 
+--------------------------------------------------------------*/
+
+@media (min-width: 768px) {
+#topbar .text-md-start 
+{
+    margin-left: 10px;
+}
+}
+
+@media (min-width: 768px) {
+  #topbar .text-end 
+  {
+      margin-right: 10px;
+  }
+  }
 /*--------------------------------------------------------------
 # Hero Section
 --------------------------------------------------------------*/
@@ -649,12 +655,25 @@ section {
   overflow: hidden;
 }
 
+@media (max-width: 768px) {
+  section {
+    padding: 40px 0;
+    overflow: hidden;
+  }
+}
+
 .section-bg {
   background-color: #1a1814;
 }
 
 .section-title {
   padding-bottom: 40px;
+}
+
+@media (max-width: 768px) {
+  .section-title {
+    padding-bottom: 14px;
+  }
 }
 
 .section-title h2 {
@@ -669,6 +688,20 @@ section {
   font-family: "Poppins", sans-serif;
 }
 
+@media (max-width: 768px) {
+  .section-title h2 {
+    font-size: 14px;
+  font-weight: 500;
+  padding: 0;
+  line-height: 12px;
+  margin: 0 0 5px 0;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  color: #aaaaaa;
+  font-family: "Poppins", sans-serif;
+  }
+}
+
 .section-title h2::after {
   content: "";
   width: 120px;
@@ -676,6 +709,18 @@ section {
   display: inline-block;
   background: rgba(255, 255, 255, 0.2);
   margin: 4px 10px;
+}
+
+/* Styles for screens 620px and narrower */
+@media (max-width: 768px) {
+  .section-title h2::after {
+    content: "\A"; /* This adds a line break using the '\A' escape sequence */
+    width: 120px;
+    height: 1px;
+    display: inline-block;
+    background: rgba(255, 255, 255, 0.2);
+    margin: 0px 1px;
+  }
 }
 
 .section-title p {
@@ -748,7 +793,6 @@ section {
   background: url("../img/about-bg.jpg") center center;
   background-size: cover;
   position: relative;
-  padding: 80px 0;
 }
 
 .about:before {
@@ -893,35 +937,9 @@ section {
 /*--------------------------------------------------------------
 # Menu Section
 --------------------------------------------------------------*/
-.menu #menu-flters {
-  padding: 0;
-  margin: 0 auto 0 auto;
-  list-style: none;
-  text-align: center;
-  border-radius: 50px;
-}
 
-.menu #menu-flters li {
-  cursor: pointer;
-  display: inline-block;
-  padding: 8px 12px 10px 12px;
-  font-size: 16px;
-  font-weight: 500;
-  line-height: 1;
-  color: #fff;
-  margin-bottom: 10px;
-  transition: all ease-in-out 0.3s;
-  border-radius: 50px;
-  font-family: "Playfair Display", serif;
-}
-
-.menu #menu-flters li:hover,
-.menu #menu-flters li.filter-active {
+.note{
   color: #cda45e;
-}
-
-.menu #menu-flters li:last-child {
-  margin-right: 0;
 }
 
 .menu .menu-item {
@@ -941,17 +959,6 @@ section {
   display: flex;
   justify-content: space-between;
   position: relative;
-}
-
-.menu .menu-content::after {
-  content: "......................................................................" "...................................................................." "....................................................................";
-  position: absolute;
-  left: 20px;
-  right: 0;
-  top: -4px;
-  z-index: 1;
-  color: #bab3a6;
-  font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
 }
 
 .menu .menu-content a {
@@ -1144,15 +1151,15 @@ section {
 /*--------------------------------------------------------------
 # Book A Table
 --------------------------------------------------------------*/
-.book-a-table .php-email-form {
+.php-email-form {
   width: 100%;
 }
 
-.book-a-table .php-email-form .form-group {
+.php-email-form .form-group {
   padding-bottom: 8px;
 }
 
-.book-a-table .php-email-form .validate {
+ .php-email-form .validate {
   display: none;
   color: red;
   margin: 0 0 15px 0;
@@ -1160,7 +1167,7 @@ section {
   font-size: 13px;
 }
 
-.book-a-table .php-email-form .error-message {
+ .php-email-form .error-message {
   display: none;
   color: #fff;
   background: #ed3c0d;
@@ -1169,11 +1176,11 @@ section {
   font-weight: 600;
 }
 
-.book-a-table .php-email-form .error-message br+br {
+ .php-email-form .error-message br+br {
   margin-top: 25px;
 }
 
-.book-a-table .php-email-form .sent-message {
+ .php-email-form .sent-message {
   display: none;
   color: #fff;
   background: #18d26e;
@@ -1182,13 +1189,13 @@ section {
   font-weight: 600;
 }
 
-.book-a-table .php-email-form .loading {
+ .php-email-form .loading {
   display: none;
   text-align: center;
   padding: 15px;
 }
 
-.book-a-table .php-email-form .loading:before {
+ .php-email-form .loading:before {
   content: "";
   display: inline-block;
   border-radius: 50%;
@@ -1200,8 +1207,8 @@ section {
   animation: animate-loading 1s linear infinite;
 }
 
-.book-a-table .php-email-form input,
-.book-a-table .php-email-form textarea {
+ .php-email-form input,
+ .php-email-form textarea {
   border-radius: 0;
   box-shadow: none;
   font-size: 14px;
@@ -1210,30 +1217,30 @@ section {
   color: white;
 }
 
-.book-a-table .php-email-form input::-moz-placeholder,
-.book-a-table .php-email-form textarea::-moz-placeholder {
+ .php-email-form input::-moz-placeholder,
+ .php-email-form textarea::-moz-placeholder {
   color: #a49b89;
 }
 
-.book-a-table .php-email-form input::placeholder,
-.book-a-table .php-email-form textarea::placeholder {
+ .php-email-form input::placeholder,
+ .php-email-form textarea::placeholder {
   color: #a49b89;
 }
 
-.book-a-table .php-email-form input:focus,
-.book-a-table .php-email-form textarea:focus {
+ .php-email-form input:focus,
+ .php-email-form textarea:focus {
   border-color: #cda45e;
 }
 
-.book-a-table .php-email-form input {
+ .php-email-form input {
   height: 44px;
 }
 
-.book-a-table .php-email-form textarea {
+ .php-email-form textarea {
   padding: 10px 12px;
 }
 
-.book-a-table .php-email-form button[type=submit] {
+ .php-email-form button[type=submit] {
   background: #cda45e;
   border: 0;
   padding: 10px 35px;
@@ -1242,7 +1249,7 @@ section {
   border-radius: 50px;
 }
 
-.book-a-table .php-email-form button[type=submit]:hover {
+ .php-email-form button[type=submit]:hover {
   background: #d3af71;
 }
 
@@ -1730,4 +1737,30 @@ section {
   text-align: center;
   font-size: 13px;
   color: #fff;
+}
+
+@media (max-width: 768px) {
+  .smmargin {
+    margin-top: 9px;
+  }
+}
+
+@media (max-width: 768px) {
+  p {
+    margin-top: 0px;
+    margin-bottom: 3rem;
+  }
+}
+
+/* Google Review buttons */
+.swiper-button-next, .swiper-button-prev {
+  display:none;
+}
+
+/* Google Map iframe */
+@media (max-width: 768px) {
+  div[data-aos="fade-up"] iframe {
+      width: 100%; /* Make the iframe full width */
+      height: 300px; /* Adjust the height as needed for your design */
+  }
 }
