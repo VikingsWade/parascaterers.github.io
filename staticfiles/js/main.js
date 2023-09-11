@@ -97,6 +97,13 @@ $('form.php-email-form').on('submit', function(e) {
     }, 'slow')
   }
 
+  $('#navbar ul li a.nav-link').on('click', function() {
+    // Remove the 'active' class from all navigation items
+    $('#navbar ul li a.nav-link').removeClass('active');
+    // Add the 'active' class to the clicked navigation item
+    $(this).addClass('active');
+  });
+
   /**
    * Toggle .header-scrolled class to #header when page is scrolled
    */
