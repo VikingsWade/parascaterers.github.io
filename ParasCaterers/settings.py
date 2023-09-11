@@ -27,7 +27,7 @@ SECRET_KEY = 'django-insecure-dtl@b#6^f+-+izwd-#*my-hvqs+%xxt0i%ufcgys0ejivd$6aq
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ['www.parascaterers.com', 'parascaterers.com', '18.206.180.131']
+ALLOWED_HOSTS = ['www.parascaterers.com', 'parascaterers.com', '18.206.180.131', '172.31.34.182']
 
 
 # Application definition
@@ -132,3 +132,6 @@ EMAIL_HOST_USER = 'schandresh24@gmail.com'
 EMAIL_HOST_PASSWORD = 'oktwlcxrfinkhqup'
 EMAIL_PORT = 587
 
+SECURE_PROXY_SSL_HEADER = ('HTTP_X_FORWARDED_PROTO', 'https')
+SECURE_SSL_REDIRECT = True
+SECURE_HSTS_SECONDS = 31536000
