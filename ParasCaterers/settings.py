@@ -27,7 +27,7 @@ SECRET_KEY = 'django-insecure-dtl@b#6^f+-+izwd-#*my-hvqs+%xxt0i%ufcgys0ejivd$6aq
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ['www.parascaterers.com', 'parascaterers.com', '18.206.180.131']
+ALLOWED_HOSTS = ["'www.parascaterers.com', 'parascaterers.com', '18.206.180.131'"]
 
 
 # Application definition

@@ -5,7 +5,7 @@
  * Author: BootstrapMade.com
  * License: https://bootstrapmade.com/license/
  */
-jQuery(document).ready(function($) {
+$(document).ready(function (){
   "use strict";
 
   // Handle form submission
@@ -220,35 +220,6 @@ $('form.php-email-form').on('submit', function(e) {
   })
 
   /**
-   * Testimonials slider
-   */
-  new Swiper('.testimonials-slider', {
-    speed: 600,
-    loop: true,
-    autoplay: {
-      delay: 5000,
-      disableOnInteraction: false
-    },
-    slidesPerView: 'auto',
-    pagination: {
-      el: '.swiper-pagination',
-      type: 'bullets',
-      clickable: true
-    },
-    breakpoints: {
-      320: {
-        slidesPerView: 1,
-        spaceBetween: 20
-      },
-
-      1200: {
-        slidesPerView: 3,
-        spaceBetween: 20
-      }
-    }
-  })
-
-  /**
    * Initiate gallery lightbox 
    */
   const galleryLightbox = GLightbox({
@@ -266,4 +237,4 @@ $('form.php-email-form').on('submit', function(e) {
       mirror: false
     })
   })
-})
+});

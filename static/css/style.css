@@ -439,6 +439,23 @@ h6 {
 }
 
 /*--------------------------------------------------------------
+# Topbar section provide margin to mobile number and email 
+--------------------------------------------------------------*/
+
+@media (min-width: 768px) {
+#topbar .text-md-start 
+{
+    margin-left: 10px;
+}
+}
+
+@media (min-width: 768px) {
+  #topbar .text-end 
+  {
+      margin-right: 10px;
+  }
+  }
+/*--------------------------------------------------------------
 # Hero Section
 --------------------------------------------------------------*/
 #hero {

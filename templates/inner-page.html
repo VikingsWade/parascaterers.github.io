@@ -51,14 +51,9 @@
   <header id="header" class="fixed-top d-flex align-items-cente">
     <div class="container-fluid container-xl d-flex align-items-center justify-content-lg-between flex-wrap">
 
-      <h1 class="logo me-auto me-lg-0"><a href="/">PARAS CATERERS</a></h1>
+      <h1 class="Inner-logo me-auto me-lg-0"><a href="/">PARAS CATERERS</a></h1>
       <nav id="navbar" class="navbar order-last order-lg-0">
-        <ul>
-
-          <li><a class="" href="{% url 'index' %}">Go Back</a></li>
-
-        </ul>
-        <i class="bi bi-list mobile-nav-toggle"></i>
+          <a class="" href="{% url 'index' %}">Go Back</a>
       </nav><!-- .navbar -->
     </div>
   </header><!-- End Header -->
@@ -71,7 +66,7 @@
   <main id="main">
 
     <!-- ======= Gallery Section ======= -->
-    <section id="gallery" class="gallery">
+    <section id="gallery" class="gallery" loading="lazy">
 
       <div class="container" data-aos="fade-up">
         <div class="section-title">
@@ -272,13 +267,13 @@
                 <strong>Phone:</strong> +91 7043 491 996<br>
                 <strong>Email:</strong> <a href="mailto:parascaterers23@gmail.com" target="_blank">parascaterers23@gmail.com</a><br>
               </p>
-              <div class="social-links mt-3">
+              {% comment %} <div class="social-links mt-3">
                 <a href="#" class="twitter"><i class="bx bxl-twitter"></i></a>
                 <a href="#" class="facebook"><i class="bx bxl-facebook"></i></a>
                 <a href="#" class="instagram"><i class="bx bxl-instagram"></i></a>
                 <a href="#" class="google-plus"><i class="bx bxl-skype"></i></a>
                 <a href="#" class="linkedin"><i class="bx bxl-linkedin"></i></a>
-              </div>
+              </div> {% endcomment %}
             </div>
           </div>
         </div>
